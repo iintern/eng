@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135738942-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-135738942-1');
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>I-internCareer | 一站式实习平台</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+  <script src="js/main.js"></script>
+  <link href="css/responsive.css" rel="stylesheet">
+  <link href="css/case.css" rel="stylesheet">
+  <link href="css/company.css" rel="stylesheet">
+  <link href="css/contact.css" rel="stylesheet">
+  <link href="css/intern.css" rel="stylesheet">
+  <link href="css/news.css" rel="stylesheet">
+  <link href="css/service.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+  <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    <a class="navbar-brand" href="./index.html">
+      <img src="./image/logo.png" width="120" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-md-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./ser.html">Services</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./news.html">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./company.html">Business</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./case.html">Successful Stories</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="./contact.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Contact Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./contact.html#contact-about">About Us</a>
+            <a class="dropdown-item" href="./contact.html#contact-join">Join Us</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="float-code">
+    <img width="150px" height="150px" src="./image/code.png" alt="qrcode">
+  </div>
+  <div class="contact-all">
+    <div class="contact-all-mini" id="contact-mobile" data-toggle="modal" data-target="#contact-mobile-form">
+      <i class="fas fa-comments contact-mini-icon"></i>
+    </div>
+    <div class="modal fade" id="contact-mobile-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact Our Career Mentors</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="apply-form">
+            <h3 id="apply-title">从这里，<br>开启你的实习定制之旅</h3>
+            <p id="apply-subtitle">请填写精确完整的信息，<br>便于我们的求职顾问联系到你</p><br>
+            <form class="form-center mobile-apply">
+              <input name="mobileName" class="form-control" placeholder="姓名">
+              <input name="mobileEmail" class="form-control" placeholder="邮箱">
+              <input name="mobileWechat" class="form-control" placeholder="微信">
+              <input name="mobileSchool" class="form-control" placeholder="院校">
+              <input name="mobileMajor" class="form-control" placeholder="专业">
+              <input name="mobileNote" class="form-control" placeholder="备注">
+              <button type="submit" class="btn btn-primary mb-2 company-btn mobile-submit">提交表格</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="contact-all-mini" id="backtop"><i class="fas fa-arrow-up contact-mini-icon"></i></div>             -->
+  </div>
+  <br><br>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
+    </ol>
+    <div class="carousel-inner" id="home-carousel">
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./image/banner1.png" alt="First slide">
+        <div class="carousel-caption carousel-sub">
+          <p id="banner1-p">From school to career life,<br>we help you to land your dream job.
+          </p>
+          <a href="./ser.html"><button id="banner1-btn">Get Internship</button></a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./image/banner2.png" alt="Second slide">
+        <div class="carousel-caption carousel-sub">
+          <p id="banner2-p">Complete our professional career self-assessment test,<br> make you find your dream job more efficiently.
+          </p>
+          <a href="./competitive.html"><button id="banner2-btn">Let's Start</button></a>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="./image/banner3.png" alt="Third slide">
+        <div class="carousel-caption carousel-sub">
+          <p class="web-none" id="banner3-p">2019 I-INTERN Campus Tour, <br>North America
+          </p>
+          <a href="https://mp.weixin.qq.com/s?__biz=MzUwOTI3MTYxMQ==&mid=2247485439&idx=1&sn=bd73289a71e46298dfe38c85d49bbaf2&chksm=f9158cabce6205bdf4a5212e173b329f330104ed87fb158b5eb100e4e2c99c7509feddf325f0&token=1127976853&lang=zh_CN#rd"><button
+              id="banner-btn-down">More Events</button></a>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div id="service">
+    <br><br> <br><br> <br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <img class="home-service-img" src="./image/service1.png">
+          <h2>High Quality Program</h2>
+          <img class="devide-line" src="./image/devide.png">
+          <p class="service-detail">
+            简历直达高管 | 高含金量实习<br> 囊括各大专业 | 获取实习证明<br> 导师强力推荐 | 名企转正机会
+          </p>
+        </div>
+        <div class="col-sm">
+          <img class="home-service-img" src="./image/service3.png">
+          <h2>求职升学辅导</h2>
+          <img class="devide-line" src="./image/devide.png">
+          <p class="service-detail">
+            简历润色 | 模拟面试<br> 文书修改 | 求职规划<br> 领英设计 | 就业咨询
+          </p>
+        </div>
+        <div class="col-sm">
+          <img class="home-service-img" src="./image/service2.png">
+          <h2>合作世界名企</h2>
+          <img class="devide-line" src="./image/devide.png">
+          <p class="service-detail">
+            世界五百强 | 创业独角兽<br> 拓展精英人脉 | 潜在内推申请<br> 中美顶尖企业 | 高薪转正机会
+          </p>
+        </div>
+      </div>
+      <br><br> <br><br>
+      <div class="row">
+        <div class="col-sm">
+          <img class="home-service-img" src="./image/service4.png">
+          <h2>精英导师团队</h2>
+          <img class="devide-line" src="./image/devide.png">
+          <p class="service-detail">
+            来自知名学府 | 行业翘楚担当<br> 贯彻企业需求 | 重视人才培养<br> 深耕中美校园 | 促进人才交流
+          </p>
+        </div>
+        <div class="col-sm">
+          <img class="home-service-img" src="./image/service5.png">
+          <h2>游学创业实战</h2>
+          <img class="devide-line" src="./image/devide.png">
+          <p class="service-detail">
+            顶尖名校 | 游学实习<br> 名企实战 | 体验创业<br> 商业竞赛 | 模拟融资
+          </p>
+        </div>
+        <div class="col-sm">
+          <img class="home-service-img" src="./image/service6.png">
+          <h2>立足硅谷中心</h2>
+          <img class="devide-line" src="./image/devide.png">
+          <p class="service-detail">
+            坐标创新腹地 | 资源汇聚中美<br> 跨国创投孵化 | 投资回报第二<br> 氛围年轻活泼 | 团队专业严谨
+          </p>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </div>
+  <div id="service-home">
+    <h1>Professional Products and Services</h1><br><br>
+    <div class="row">
+      <div class="col-sm-6 ser-main">
+        <h2 class="ser-title" style="color:#000;">Pre-Career Enhancement</h2><br>
+        <p class="service-detail">Resume/CV·Interview·Networking</p>
+        <p class="service-detail" style="color: #000;">
+          Our elite mentor team members are from Wall Street in New York and Silicon Valley in California. Whether you need to polish your own resume to achieve the most professional and outstanding level, or you need to customize a wonderful and professional cover letter, and teach you how to perfectly talk to the interviewer, we are here and always waiting for you!
+        </p>
+        <br>
+        <a id="contact-btn1">
+          <button type="submit" onclick="window.location.href='ser.html#menu1'" class="btn btn-primary mb-2 subbanner-btn">Let's Go</button>
+        </a>
+      </div>
+      <div class="col-sm-6 order-first order-sm-last landing-img">
+        <img id="news-banner" width="70%" height="auto" src="./image/hs1.png" />
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="col-sm-6 landing-img">
+        <img id="news-banner" width="70%" height="auto" src="./image/hs2.png" />
+      </div>
+      <div class="col-sm-6 ser-main">
+        <h2 class="ser-title" style="color:#000;">Master Online Coaching</h2><br>
+        <p class="service-detail">Finance·Business·Tech·Design·Engineering</p>
+        <p class="service-detail" style="color: #000;">
+          We offer exclusive 1-on-1 online courses in various fields such as Finance, Business, Technology, Design, Engineering, etc. Students will be involved into our high quality mentor networking and coaching programs to improve professional skills.
+        </p>
+        <br>
+        <a id="contact-btn2">
+          <button type="submit" onclick="window.location.href='ser.html#menu2'" class="btn btn-primary mb-2 subbanner-btn">Registration</button>
+        </a>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="col-sm-6 ser-main">
+        <h2 class="ser-title" style="color:#000;">Internship Referral</h2><br>
+        <p class="service-detail">Global Opportunities·Trackable Process</p>
+        <p class="service-detail" style="color: #000;">
+          We cooperate with fortune 500 companies and fast-growing start-up companies regarding their on-campus talent acquisition. Our mission is to match qualified students with their dream companies to make the talant acquisition progress more efficient and accurate.  
+        </p>
+        <br>
+        <a id="contact-btn3">
+          <button type="submit" onclick="window.location.href='ser.html#menu3'" class="btn btn-primary mb-2 subbanner-btn">Internship Application</button>
+        </a>
+      </div>
+      <div class="col-sm-6 order-first order-sm-last landing-img">
+        <img id="news-banner" width="70%" height="auto" src="./image/hs3.png" />
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="col-sm-6 landing-img">
+        <img id="news-banner" width="70%" height="auto" src="./image/hs4.png" />
+      </div>
+      <div class="col-sm-6 ser-main">
+        <h2 class="ser-title" style="color:#000;">Falcon Plan</h2><br>
+        <p class="service-detail">Targeted Companies Application</p>
+        <p class="service-detail" style="color: #000;">
+          We has launched a new North American focused internship application program, covering hundreds of famous American companies. Help students capture dream offer through formal and strong recommendation.
+
+        </p>
+        <br>
+        <a id="contact-btn4">
+          <button type="submit" onclick="window.location.href='ser.html#menu4'" class="btn btn-primary mb-2 subbanner-btn">Know More</button>
+        </a>
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="col-sm-6 ser-main">
+        <h2 class="ser-title" style="color:#000;">Art Summer Camp</h2><br>
+        <p class="service-detail">Hollywood·San Francisco</p>
+        <p class="service-detail" style="color: #000;">
+          For elite students, we have customized 15-day / 30-day experience tours. Students will travel to Hollywood, the world of film and television, or San Francisco, the world's technology and art capital, for a full range of training and study tour.
+        </p>
+        <br>
+        <a id="contact-btn5">
+          <button type="submit" onclick="window.location.href='ser.html#menu5'" class="btn btn-primary mb-2 subbanner-btn">报名游学项目</button>
+        </a>
+      </div>
+      <div class="col-sm-6 order-first order-sm-last landing-img">
+        <img id="news-banner" width="70%" height="auto" src="./image/hs5.png" />
+      </div>
+    </div><br><br><br>
+    <div class="row">
+      <div class="col-sm-6 landing-img">
+        <img id="news-banner" width="70%" height="auto" src="./image/hs6.png" />
+      </div>
+      <div class="col-sm-6 ser-main">
+        <h2 class="ser-title" style="color:#000;">Background Enhancement Camp</h2><br>
+        <p class="service-detail">Innovation Tour·Business Competition</p>
+        <p class="service-detail" style="color: #000;">
+        We teamed up with Silicon Valley's famous investment firm and Wall Street financial corporation to launch an innovation training camp with professional business competition. The Forbes Outstanding Investors will bring you an in-depth understanding of the investment industry, and Harvard Business School honorary scholars will teach hands-on business secrets.
+        </p>
+        <br>
+        <a id="contact-btn6">
+          <button type="submit" onclick="window.location.href='ser.html#menu6'" class="btn btn-primary mb-2 subbanner-btn">Know More</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="choice">
+    <!-- <img src="./image/header-deco.png" width="48px" height="auto"> -->
+    <h1>Why Choose I-intern</h1>
+
+    <div class="row counters" style="margin-bottom:35px;">
+      <div class="col-sm-3 col-6 text-center">
+        <span data-toggle="counter-up">300</span>
+        <span>+</span>
+        <p>Exclusive Intern Opportunities</p>
+      </div>
+
+      <div class="col-sm-3 col-6 text-center">
+        <span data-toggle="counter-up">100</span>
+        <span>%</span>
+        <p>North America Elite Mentor Team</p>
+      </div>
+
+      <div class="col-sm-3 col-6 text-center">
+        <span data-toggle="counter-up">999</span>
+        <span>+</span>
+        <p>Successful Student Cases</p>
+      </div>
+
+      <div class="col-sm-3 col-6 text-center">
+        <span data-toggle="counter-up">20</span>
+        <span>+</span>
+        <p>Internship Program fields</p>
+      </div>
+
+    </div>
+    <h2>Internship Programs Location</h2>
+    <img id="choice-graphic" width="70%" height="auto" src="./image/graphic.png">
+  </div>
+
+  <div id="feedback">
+    <div class="center-container">
+      <!-- <img src="./image/header-deco.png" width="48px" height="auto"> -->
+      <h1>Students Feedback</h1>
+    </div>
+    <div class="feedback-container">
+      <div class="row" id="feedback-row">
+        <div class="col-sm-5 student center-container">
+          <h3 id="feedback-title1">Students Said</h3><br><br>
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active container">
+                <p class="hr-feedback">
+                  The Background Enhancement Program (BEP) from I-intern career consulting platform is like our youth —— full of challenges, successes, and frustrations, but also warm and reliable. I applied for the master program in my dream school New York University. During the interview, the admission officer was very interested in my BEP internship experience from I-intern. I talked with him about my internship experience, and shared my ideas about some real-world marketing campaigns I did in this BEP internship. This interview was really successful and I finally got the offer from NYU because of the BEP internship. Furthermore, it helped me get a better understanding of my future career path.
+                </p>
+                <br><br>
+                <div class="feedback-person">
+                  <img class="feedback-profile" width="15%" src="./image/profile1.png" alt="First slide">
+                  <p class="feedback-name">Kathy</p>
+                </div>
+              </div>
+              <div class="carousel-item container">
+                <p class="hr-feedback">
+                  I am an undergraduate student at Emory University. I had internship experience in Tencent and Vanke, but I still felt that I didn’t have enough practical experience and there was a room for my improvement. At this point, my friend gave me the business card of the I-intern internship platform. The career mentor from I-intern answered all of my questions helpfully. According to my situation, She immediately provided the corresponding help. I successfully found the investment bank internship on Wall Street, and moved from Atlanta to New York. When I arrived in New York, it was quite cool to work in the Trump Building every day. The program is a  high-end internship program, and the content is very fulfilling and satisfying every day. These days manager was considering to give me return offer, and hopefully I will work here after graduation. There’s a Chinese Idiom saying “ there are numerous talents out there but few wise headhunters”, and I want to say, it’s so hard but important to meet your wise headhunter.
+
+                </p>
+                <br><br>
+                <div class="feedback-person">
+                  <img class="feedback-profile" width="15%" src="./image/profile5.jpeg" alt="First slide">
+                  <p class="feedback-name">Yvonne</p>
+                </div>
+              </div>
+              <div class="carousel-item container">
+                <p class="hr-feedback">
+                  I am a student in the University of the Arts in San Francisco majoring in media. I applied for an internship at a Hollywood media company and got the offer after consulting and training at I-intern. During this two month’s internship, I made a promotional film, and edited the script by myself. I felt that working is totally different from school life, since my working schedule was very tight and manager always pushed me to do a lot. With the recommendation letter from this internship, I got another internship for Stan Lee's new film production team at LA Hollywood this summer! I don't want to use an exaggerated tone to describe the effect of an internship program, but I really appreciate the internship for me to connect with the resources and bring me a brand new way of thinking. Thank I-intern so much!
+
+                </p>
+                <br><br>
+                <div class="feedback-person">
+                  <img class="feedback-profile" width="15%" src="./image/profile8.jpg" alt="First slide">
+                  <p class="feedback-name">Wonderlyle</p>
+                </div>
+              </div>
+              <div class="carousel-item container">
+                <p class="hr-feedback">
+                  I am from Columbia University and I will be graduating next year. Under the guidance of the I-intern mentors, I did my internship in a venture capital firm. This company was quite reliable. After two months of the financial analyst intern, I felt that there was really a gap between my school life and real-world practice. The internship in two months was like studying in two semesters, since I thought I really learnt a lot. I thought I understood a lot of business rules that I’ve never learned before. I’ve already finished this internship project. Also, I am now a trainee of asset management on Wall Street since I got the referral by this VC firm. In summary, I feel that networking and internship experience are really significant in the beginning of my career path. I am glad to choose I-intern Career Consulting Group. I will definitely recommend this platform to my friends.
+
+                </p>
+                <br><br>
+                <div class="feedback-person">
+                  <img class="feedback-profile" width="15%" src="./image/profile6.jpeg" alt="First slide">
+                  <p class="feedback-name">YIBestrong</p>
+                </div>
+              </div>
+              <div class="carousel-item container">
+                <p class="hr-feedback">I am from UC Berkeley double majoring in Economic and CS. I tried to apply for an assistant job in asset allocation, but I failed since I did’t have any related internship experience before. Then I found I-intern career consulting platform referred by my friends, and mentors gave me a lot of guidance and helped me finally find a high quality internship. After this internship, I decided to apply for the assistant job again using my new recommendation letter and the updated resume containing I-intern's internship experience. And guess what! I got the offer this time!!! I talked with HR about my last internship experience, and she was impressed by it. What I want to say is that using I-intern platform is the smartest way I have ever chosen.
+                </p>
+                <br><br>
+                <div class="feedback-person">
+                  <img class="feedback-profile" width="15%" src="./image/profile7.jpeg" alt="First slide">
+                  <p class="feedback-name">张阿阿</p>
+                </div>
+              </div>
+              <div class="carousel-item container">
+                <p class="hr-feedback">I have never tried to cooperate with my teammates, and I have never experienced the unique team culture of an investment firm. Also, I have never been exposed to high-intensity activities like elite business marketing game. I can only say that the business game and internship experience provided by I-intern internship platform is greatly beneficial for me. After going through all the aspects of the project with our teammates, we found that the most valuable thing is teamwork, and to be positively influenced by each other. </p>
+                <br><br>
+                <div class="feedback-person">
+                  <img class="feedback-profile" width="15%" src="./image/profile9.jpg" alt="First slide">
+                  <p class="feedback-name">Leslie</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <a class="jump-service" href="./case.html">More Successful Stories -></a>
+        </div>
+
+        <div class="col-sm-7 school">
+          <h3 id="feedback-title2">Where Our Students From</h3>
+          <br><br>
+          <img width="95%" height="auto" src="./image/students.png">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+      <div class="row">
+        <div class="col-sm-4">
+            <img width="40%" height="auto" src="./image/logo.png"><br><br><br>
+            <p class="footer-note">Copyright © 2017-2019 I-intern, LLC.  <br>All rights reserved.</p>
+        </div>
+        <div class="col-sm-4">
+          <h2 class="footer-title">Company Address</h2> <br><br>
+          <p class="footer-note">Silicon Valley：175 Forest Ave, Palo Alto, CA <br>
+              San Francisco：475 Sansome St, San Francisco, CA <br>
+              Shanghai：1515 Nanjing W Rd, Tower 2, Jing’An, Shanghai</p> <br>
+        </div>
+        <div class="col-sm-4">
+            <h2 class="footer-title">Follow Us</h2> <br><br>
+            <div class="footer-socialmedia">
+                <a href="mailto:info@iintern.com"><img class="social-icon" src="./image/msg.png"></a>
+                <a href="https://weibo.com/iinterncareer"><img class="social-icon" src="./image/weibo.png"></a>
+                <a href="https://www.zhihu.com/people/i-internzhi-ye-zi-xun-ping-tai/activities"><img class="social-icon" src="./image/zhihu.png"></a>
+                <a href="https://www.instagram.com/iinterncareer/"><img class="social-icon" src="./image/ins.png"></a>
+                <a href="http://mp.weixin.qq.com/s?__biz=MzUwOTI3MTYxMQ==&mid=100000522&idx=1&sn=4bd2bfe54ef44417da7f3fd968061752&chksm=7915885e4e620148e09588f3ee5ff165818f0be9cfae9dc644a454e622e81bdda6458f5889a9#rd"><img
+                    class="social-icon" src="./image/wechat.png"></a>
+              </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="./node_modules/waypoints/waypoints.min.js"></script>
+  <script src="./node_modules/counterup/counterup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+</body>
+<footer>
+  <script src="./js/mobile-intern-validation.js"></script>
+</footer>
+
+</html>
